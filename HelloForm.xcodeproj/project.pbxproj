@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50195B96195ADA69006B3380 /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50195B95195ADA69006B3380 /* RegexValidator.swift */; };
+		501EBFCD196ACD6500D70506 /* PaymentForm+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */; };
+		505322FD195C1BE700501609 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505322FC195C1BE700501609 /* EmailValidator.swift */; };
+		50532302195C296300501609 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50532301195C296300501609 /* Observer.swift */; };
+		50532304195C4B3C00501609 /* ErrorIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50532303195C4B3C00501609 /* ErrorIndicator.swift */; };
+		50783249195B003F00C41DDD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50783248195B003F00C41DDD /* TextField.swift */; };
+		5078324B195B012900C41DDD /* ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078324A195B012900C41DDD /* ErrorReporting.swift */; };
+		5078324D195B018D00C41DDD /* TextField+ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078324C195B018D00C41DDD /* TextField+ErrorReporting.swift */; };
+		508E95E5195D4FC2007F64E3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508E95E4195D4FC2007F64E3 /* Observable.swift */; };
+		50AD02F4196421840076836B /* BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AD02F3196421840076836B /* BatchUpdater.swift */; };
+		50B6C83B195AA20100B2561B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83A195AA20100B2561B /* AppDelegate.swift */; };
+		50B6C83D195AA20100B2561B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83C195AA20100B2561B /* ViewController.swift */; };
+		50B6C85E195AA34E00B2561B /* PaymentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C85D195AA34E00B2561B /* PaymentForm.swift */; };
+		50B6C860195AA4D600B2561B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C85F195AA4D600B2561B /* Event.swift */; };
+		50B6C864195AADC000B2561B /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C863195AADC000B2561B /* EventPresenter.swift */; };
+		50B6C866195AB69800B2561B /* Event+Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C865195AB69800B2561B /* Event+Printable.swift */; };
+		50B6C86C195ABBD900B2561B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B6C86B195ABBD900B2561B /* ViewController.xib */; };
+		50B9A944195B59D000F31D66 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A943195B59D000F31D66 /* Validator.swift */; };
+		50C95382196A970F00DCCEC0 /* ViewController+EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */; };
+		50C95384196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */; };
+		50EBD5A6195D86F600393D96 /* ExpiryValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */; };
+		50FC28351964953A00C213BB /* PaymentFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC28341964953A00C213BB /* PaymentFormValidator.swift */; };
+		50FC283C19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC283B19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift */; };
+		50FC283E19655AC400C213BB /* ViewController+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC283D19655AC400C213BB /* ViewController+Observer.swift */; };
+		50FC28441965644C00C213BB /* NSDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC28431965644C00C213BB /* NSDateFormatter.swift */; };
+		50FC284619656FAB00C213BB /* CardCvcValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC284519656FAB00C213BB /* CardCvcValidator.swift */; };
+		50FC28481965807800C213BB /* CardNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC28471965807800C213BB /* CardNumberValidator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50195B95195ADA69006B3380 /* RegexValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
+		501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentForm+Networking.swift"; sourceTree = "<group>"; };
+		505322FC195C1BE700501609 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		50532301195C296300501609 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		50532303195C4B3C00501609 /* ErrorIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorIndicator.swift; sourceTree = "<group>"; };
+		50783248195B003F00C41DDD /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		5078324A195B012900C41DDD /* ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorReporting.swift; sourceTree = "<group>"; };
+		5078324C195B018D00C41DDD /* TextField+ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+ErrorReporting.swift"; sourceTree = "<group>"; };
+		508E95E4195D4FC2007F64E3 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		50AD02F3196421840076836B /* BatchUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchUpdater.swift; sourceTree = "<group>"; };
+		50B6C835195AA20100B2561B /* HelloForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B6C839195AA20100B2561B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B6C83A195AA20100B2561B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50B6C83C195AA20100B2561B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50B6C85D195AA34E00B2561B /* PaymentForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentForm.swift; sourceTree = "<group>"; };
+		50B6C85F195AA4D600B2561B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		50B6C863195AADC000B2561B /* EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
+		50B6C865195AB69800B2561B /* Event+Printable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+Printable.swift"; sourceTree = "<group>"; };
+		50B6C86B195ABBD900B2561B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		50B9A943195B59D000F31D66 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+EventPresenter.swift"; sourceTree = "<group>"; };
+		50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ErrorIndicator+ErrorReporting.swift"; sourceTree = "<group>"; };
+		50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpiryValidator.swift; sourceTree = "<group>"; };
+		50FC28341964953A00C213BB /* PaymentFormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentFormValidator.swift; sourceTree = "<group>"; };
+		50FC283B19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+PaymentFormValidatorDelegate.swift"; sourceTree = "<group>"; };
+		50FC283D19655AC400C213BB /* ViewController+Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Observer.swift"; sourceTree = "<group>"; };
+		50FC28431965644C00C213BB /* NSDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateFormatter.swift; sourceTree = "<group>"; };
+		50FC284519656FAB00C213BB /* CardCvcValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCvcValidator.swift; sourceTree = "<group>"; };
+		50FC28471965807800C213BB /* CardNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNumberValidator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50B6C832195AA20100B2561B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50532300195C21B400501609 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				50195B95195ADA69006B3380 /* RegexValidator.swift */,
+				505322FC195C1BE700501609 /* EmailValidator.swift */,
+				50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */,
+				50FC284519656FAB00C213BB /* CardCvcValidator.swift */,
+				50FC28471965807800C213BB /* CardNumberValidator.swift */,
+				50FC28341964953A00C213BB /* PaymentFormValidator.swift */,
+			);
+			name = Validator;
+			sourceTree = "<group>";
+		};
+		50783246195B000400C41DDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50C95385196AA01D00DCCEC0 /* TextField */,
+				50C95386196AA02E00DCCEC0 /* ErrorIndicator */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		50B6C82C195AA20100B2561B = {
+			isa = PBXGroup;
+			children = (
+				50B6C837195AA20100B2561B /* HelloForm */,
+				50B6C836195AA20100B2561B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50B6C836195AA20100B2561B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50B6C835195AA20100B2561B /* HelloForm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50B6C837195AA20100B2561B /* HelloForm */ = {
+			isa = PBXGroup;
+			children = (
+				50B6C861195AAD7A00B2561B /* Misc */,
+				50783246195B000400C41DDD /* View */,
+				50B6C85C195AA33100B2561B /* Model */,
+				50FC283A19654F3600C213BB /* Controller */,
+				50B6C83A195AA20100B2561B /* AppDelegate.swift */,
+				50B6C839195AA20100B2561B /* Info.plist */,
+			);
+			path = HelloForm;
+			sourceTree = "<group>";
+		};
+		50B6C85C195AA33100B2561B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50B6C867195AB7D900B2561B /* Event */,
+				50B6C868195AB93F00B2561B /* Form */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		50B6C861195AAD7A00B2561B /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				50FC28421965640F00C213BB /* Extension */,
+				50B6C862195AAD8300B2561B /* Protocol */,
+				50532300195C21B400501609 /* Validator */,
+				50AD02F3196421840076836B /* BatchUpdater.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		50B6C862195AAD8300B2561B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				50B9A943195B59D000F31D66 /* Validator.swift */,
+				50532301195C296300501609 /* Observer.swift */,
+				508E95E4195D4FC2007F64E3 /* Observable.swift */,
+				50B6C863195AADC000B2561B /* EventPresenter.swift */,
+				5078324A195B012900C41DDD /* ErrorReporting.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		50B6C867195AB7D900B2561B /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				50B6C85F195AA4D600B2561B /* Event.swift */,
+				50B6C865195AB69800B2561B /* Event+Printable.swift */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		50B6C868195AB93F00B2561B /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				50B6C85D195AA34E00B2561B /* PaymentForm.swift */,
+				501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		50C95385196AA01D00DCCEC0 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				50783248195B003F00C41DDD /* TextField.swift */,
+				5078324C195B018D00C41DDD /* TextField+ErrorReporting.swift */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+		50C95386196AA02E00DCCEC0 /* ErrorIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				50532303195C4B3C00501609 /* ErrorIndicator.swift */,
+				50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */,
+			);
+			name = ErrorIndicator;
+			sourceTree = "<group>";
+		};
+		50C95387196AA0A100DCCEC0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				50B6C86B195ABBD900B2561B /* ViewController.xib */,
+				50B6C83C195AA20100B2561B /* ViewController.swift */,
+				50FC283D19655AC400C213BB /* ViewController+Observer.swift */,
+				50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */,
+				50FC283B19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		50FC283A19654F3600C213BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50C95387196AA0A100DCCEC0 /* ViewController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		50FC28421965640F00C213BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50FC28431965644C00C213BB /* NSDateFormatter.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50B6C834195AA20100B2561B /* HelloForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50B6C851195AA20100B2561B /* Build configuration list for PBXNativeTarget "HelloForm" */;
+			buildPhases = (
+				50B6C831195AA20100B2561B /* Sources */,
+				50B6C832195AA20100B2561B /* Frameworks */,
+				50B6C833195AA20100B2561B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloForm;
+			productName = HelloForm;
+			productReference = 50B6C835195AA20100B2561B /* HelloForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50B6C82D195AA20100B2561B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Yalantis;
+				TargetAttributes = {
+					50B6C834195AA20100B2561B = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 50B6C830195AA20100B2561B /* Build configuration list for PBXProject "HelloForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50B6C82C195AA20100B2561B;
+			productRefGroup = 50B6C836195AA20100B2561B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50B6C834195AA20100B2561B /* HelloForm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50B6C833195AA20100B2561B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B6C86C195ABBD900B2561B /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50B6C831195AA20100B2561B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B6C866195AB69800B2561B /* Event+Printable.swift in Sources */,
+				50FC283C19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift in Sources */,
+				501EBFCD196ACD6500D70506 /* PaymentForm+Networking.swift in Sources */,
+				5078324D195B018D00C41DDD /* TextField+ErrorReporting.swift in Sources */,
+				50B6C860195AA4D600B2561B /* Event.swift in Sources */,
+				50195B96195ADA69006B3380 /* RegexValidator.swift in Sources */,
+				50783249195B003F00C41DDD /* TextField.swift in Sources */,
+				50532304195C4B3C00501609 /* ErrorIndicator.swift in Sources */,
+				50532302195C296300501609 /* Observer.swift in Sources */,
+				50FC28441965644C00C213BB /* NSDateFormatter.swift in Sources */,
+				50FC284619656FAB00C213BB /* CardCvcValidator.swift in Sources */,
+				5078324B195B012900C41DDD /* ErrorReporting.swift in Sources */,
+				50B9A944195B59D000F31D66 /* Validator.swift in Sources */,
+				50B6C85E195AA34E00B2561B /* PaymentForm.swift in Sources */,
+				50B6C83D195AA20100B2561B /* ViewController.swift in Sources */,
+				50FC28351964953A00C213BB /* PaymentFormValidator.swift in Sources */,
+				50B6C83B195AA20100B2561B /* AppDelegate.swift in Sources */,
+				505322FD195C1BE700501609 /* EmailValidator.swift in Sources */,
+				508E95E5195D4FC2007F64E3 /* Observable.swift in Sources */,
+				50C95382196A970F00DCCEC0 /* ViewController+EventPresenter.swift in Sources */,
+				50FC283E19655AC400C213BB /* ViewController+Observer.swift in Sources */,
+				50C95384196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift in Sources */,
+				50EBD5A6195D86F600393D96 /* ExpiryValidator.swift in Sources */,
+				50B6C864195AADC000B2561B /* EventPresenter.swift in Sources */,
+				50FC28481965807800C213BB /* CardNumberValidator.swift in Sources */,
+				50AD02F4196421840076836B /* BatchUpdater.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50B6C84F195AA20100B2561B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50B6C850195AA20100B2561B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50B6C852195AA20100B2561B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				INFOPLIST_FILE = HelloForm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50B6C853195AA20100B2561B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				INFOPLIST_FILE = HelloForm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50B6C830195AA20100B2561B /* Build configuration list for PBXProject "HelloForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B6C84F195AA20100B2561B /* Debug */,
+				50B6C850195AA20100B2561B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50B6C851195AA20100B2561B /* Build configuration list for PBXNativeTarget "HelloForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50B6C852195AA20100B2561B /* Debug */,
+				50B6C853195AA20100B2561B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50B6C82D195AA20100B2561B /* Project object */;
+}

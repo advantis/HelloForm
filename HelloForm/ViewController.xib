@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="HelloForm">
+            <connections>
+                <outlet property="cvcField" destination="Zfz-AC-0pf" id="McT-eJ-K2G"/>
+                <outlet property="emailField" destination="13v-J4-q7C" id="t6b-sh-Ypw"/>
+                <outlet property="expiryField" destination="lk1-7o-LuH" id="x98-3f-g1u"/>
+                <outlet property="numberField" destination="L0b-jx-pRV" id="j1v-KM-atJ"/>
+                <outlet property="quantityLabel" destination="9xv-01-1yH" id="rdH-gq-2Oa"/>
+                <outlet property="quantityStepper" destination="HpQ-Pi-WM6" id="A6Z-bN-gZK"/>
+                <outlet property="submitButton" destination="ZI4-C6-iuR" id="ia8-yf-yRs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="z4a-3C-dK8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="HpQ-Pi-WM6">
+                    <rect key="frame" x="206" y="87" width="94" height="29"/>
+                    <connections>
+                        <action selector="contentDidChange" destination="-1" eventType="valueChanged" id="fsS-t2-xZZ"/>
+                    </connections>
+                </stepper>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13v-J4-q7C" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
+                    <rect key="frame" x="20" y="136" width="280" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="ypK-x5-va0"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI4-C6-iuR">
+                    <rect key="frame" x="20" y="286" width="280" height="30"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submit" destination="-1" eventType="touchUpInside" id="34x-8e-UkN"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lk1-7o-LuH" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
+                    <rect key="frame" x="20" y="236" width="130" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="RFB-Ko-pXg"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zfz-AC-0pf" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
+                    <rect key="frame" x="170" y="236" width="130" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="2qM-b8-us4"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card #" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L0b-jx-pRV" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
+                    <rect key="frame" x="20" y="186" width="280" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="Rzk-1e-rqb"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xv-01-1yH">
+                    <rect key="frame" x="170" y="87" width="28" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
