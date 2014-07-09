@@ -25,6 +25,7 @@
 		50B6C866195AB69800B2561B /* Event+Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C865195AB69800B2561B /* Event+Printable.swift */; };
 		50B6C86C195ABBD900B2561B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B6C86B195ABBD900B2561B /* ViewController.xib */; };
 		50B9A944195B59D000F31D66 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A943195B59D000F31D66 /* Validator.swift */; };
+		50C7D5B1196D1B8000520AEB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C7D5B0196D1B8000520AEB /* Result.swift */; };
 		50C95382196A970F00DCCEC0 /* ViewController+EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */; };
 		50C95384196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */; };
 		50EBD5A6195D86F600393D96 /* ExpiryValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */; };
@@ -57,6 +58,7 @@
 		50B6C865195AB69800B2561B /* Event+Printable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+Printable.swift"; sourceTree = "<group>"; };
 		50B6C86B195ABBD900B2561B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		50B9A943195B59D000F31D66 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		50C7D5B0196D1B8000520AEB /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+EventPresenter.swift"; sourceTree = "<group>"; };
 		50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ErrorIndicator+ErrorReporting.swift"; sourceTree = "<group>"; };
 		50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpiryValidator.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				50B6C867195AB7D900B2561B /* Event */,
 				50B6C868195AB93F00B2561B /* Form */,
+				50C7D5B0196D1B8000520AEB /* Result.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C7D5B1196D1B8000520AEB /* Result.swift in Sources */,
 				50B6C866195AB69800B2561B /* Event+Printable.swift in Sources */,
 				50FC283C19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift in Sources */,
 				501EBFCD196ACD6500D70506 /* PaymentForm+Networking.swift in Sources */,

@@ -73,9 +73,12 @@ class ViewController: UIViewController {
 
     @IBAction
     func submit() {
-        form.submitWithHandler({(error: NSError?) in
-            if error {
-                println("\(error)")
+        form.submitWithHandler({result in
+            switch result {
+                case .Success:
+                    println("success")
+                case .Failure(let error):
+                    println(error)
             }
         });
     }
