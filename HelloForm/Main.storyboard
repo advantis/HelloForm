@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="leS-cQ-4hP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="leS-cQ-4hP">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="464" y="385"/>
         </scene>
-        <!--Table View Controller-->
+        <!--View Controller-->
         <scene sceneID="3ET-Fs-i0t">
             <objects>
-                <tableViewController id="6ft-sz-0Or" sceneMemberID="viewController">
+                <tableViewController id="6ft-sz-0Or" customClass="ViewController" customModule="HelloForm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="HWt-zG-CCq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,9 @@
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" value="1" minimumValue="1" maximumValue="100" id="H2N-DL-LV1">
                                                     <rect key="frame" x="206" y="11" width="94" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="valueChanged" id="H4U-A1-OLB"/>
+                                                    </connections>
                                                 </stepper>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4d-eZ-OqM">
                                                     <rect key="frame" x="170" y="11" width="28" height="29"/>
@@ -66,6 +69,8 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     <connections>
+                                                        <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="editingChanged" id="fIW-pu-hhP"/>
+                                                        <action selector="textFieldDidReturn:" destination="6ft-sz-0Or" eventType="editingDidEndOnExit" id="GFd-w1-Kza"/>
                                                         <outlet property="nextField" destination="FSY-Vj-hIQ" id="3Wi-SZ-MlZ"/>
                                                     </connections>
                                                 </textField>
@@ -83,6 +88,8 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     <connections>
+                                                        <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="editingChanged" id="ZWG-2S-PNm"/>
+                                                        <action selector="textFieldDidReturn:" destination="6ft-sz-0Or" eventType="editingDidEndOnExit" id="iua-HA-hfH"/>
                                                         <outlet property="nextField" destination="4kU-MJ-Kwf" id="jSc-qm-3kx"/>
                                                     </connections>
                                                 </textField>
@@ -99,6 +106,10 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="editingChanged" id="mZZ-lM-zX4"/>
+                                                        <action selector="textFieldDidReturn:" destination="6ft-sz-0Or" eventType="editingDidEndOnExit" id="5zG-MD-I4Z"/>
+                                                    </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry" minimumFontSize="17" id="4kU-MJ-Kwf" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="10" width="130" height="30"/>
@@ -106,6 +117,8 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     <connections>
+                                                        <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="editingChanged" id="fva-QP-VId"/>
+                                                        <action selector="textFieldDidReturn:" destination="6ft-sz-0Or" eventType="editingDidEndOnExit" id="a5v-3m-vzA"/>
                                                         <outlet property="nextField" destination="8Qq-Mz-Xq4" id="c7c-e2-NNX"/>
                                                     </connections>
                                                 </textField>
@@ -123,6 +136,9 @@
                                                     <state key="normal" title="Submit">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="submit" destination="6ft-sz-0Or" eventType="touchUpInside" id="Aid-Pc-ucw"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -136,6 +152,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="upg-JQ-YKd"/>
+                    <connections>
+                        <outlet property="cvcField" destination="8Qq-Mz-Xq4" id="C8D-WJ-R12"/>
+                        <outlet property="emailField" destination="qzt-M3-VB4" id="LVD-7r-h6X"/>
+                        <outlet property="expiryField" destination="4kU-MJ-Kwf" id="Zsa-XV-LZX"/>
+                        <outlet property="numberField" destination="FSY-Vj-hIQ" id="XT2-Cx-fVh"/>
+                        <outlet property="quantityLabel" destination="W4d-eZ-OqM" id="hW6-vL-kkL"/>
+                        <outlet property="quantityStepper" destination="H2N-DL-LV1" id="Rjw-Jl-VER"/>
+                        <outlet property="submitButton" destination="zHh-vH-KIs" id="GZQ-I4-j8R"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqj-3u-nfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,6 +170,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>
