@@ -4,7 +4,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
     var event: Event?
     var form: PaymentForm! = nil
