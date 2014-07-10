@@ -2,6 +2,7 @@
 //  Copyright © 2014 Yuri Kotov
 //
 
+@objc
 class Event {
     
     let id: Int
