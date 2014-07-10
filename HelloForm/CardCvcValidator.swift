@@ -8,6 +8,8 @@ typealias CreditCardInfo = (number: String, cvc: String)
 
 class CardCvcValidator: Validator {
 
+    var error = NSError(domain: "CardCvcValidatorDomain", code: 1, userInfo: nil)
+
     func validate(input: Any?, error: NSErrorPointer) -> Bool {
         var isValid = false
         if let (number, cvc) = input as? CreditCardInfo {
@@ -16,7 +18,7 @@ class CardCvcValidator: Validator {
             isValid = (isAmex && length == 4) || (!isAmex && length == 3)
         }
         if !isValid && error {
-            error.memory = NSError(domain: "CardCvcValidatorDomain", code: 1, userInfo: nil)
+            error.memory = self.error
         }
         return isValid
     }

@@ -6,6 +6,8 @@ import Foundation
 
 class CardNumberValidator: Validator {
 
+    var error = NSError(domain: "CardNumberValidatorDomain", code: 1, userInfo: nil)
+
     func isLengthValid(number: String) -> Bool {
         let length = countElements(number)
         return 10 <= length && length < 20
@@ -42,7 +44,7 @@ class CardNumberValidator: Validator {
             isValid = isLengthValid(number) && isLuhnValid(number)
         }
         if !isValid && error {
-            error.memory = NSError(domain: "CardNumberValidatorDomain", code: 1, userInfo: nil)
+            error.memory = self.error
         }
         return isValid
     }

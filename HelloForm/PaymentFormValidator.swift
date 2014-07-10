@@ -21,6 +21,8 @@ class PaymentFormValidator: Validator {
 
     weak var delegate: PaymentFormValidatorDelegate?
 
+    var error = NSError(domain: "PaymentFormValidatorDomain", code: 1, userInfo: nil)
+
     convenience init(delegate: PaymentFormValidatorDelegate) {
         self.init()
         self.delegate = delegate
@@ -50,7 +52,7 @@ class PaymentFormValidator: Validator {
             delegate?.didValidateCvcWithError(error)
         }
         if !isValid && error {
-            error.memory = NSError(domain: "PaymentFormValidatorDomain", code: 1, userInfo: nil)
+            error.memory = self.error
         }
         return isValid
     }
