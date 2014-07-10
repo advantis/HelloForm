@@ -10,16 +10,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
+        let navigationController = window.rootViewController as UINavigationController
+        let viewController = navigationController.topViewController as ViewController
 
         let event = Event(id:1)
         event.quantity = 4
 
-        let controller = ViewController()
-        controller.setEvent(event)
-
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window.rootViewController = controller
-        window.makeKeyAndVisible()
+        viewController.setEvent(event)
 
         return true
     }
