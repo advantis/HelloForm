@@ -12,6 +12,7 @@
 		505322FD195C1BE700501609 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505322FC195C1BE700501609 /* EmailValidator.swift */; };
 		50532302195C296300501609 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50532301195C296300501609 /* Observer.swift */; };
 		50532304195C4B3C00501609 /* ErrorIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50532303195C4B3C00501609 /* ErrorIndicator.swift */; };
+		506BF0DA196EAAFF001088BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506BF0D9196EAAFF001088BD /* Main.storyboard */; };
 		50783249195B003F00C41DDD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50783248195B003F00C41DDD /* TextField.swift */; };
 		5078324B195B012900C41DDD /* ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078324A195B012900C41DDD /* ErrorReporting.swift */; };
 		5078324D195B018D00C41DDD /* TextField+ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078324C195B018D00C41DDD /* TextField+ErrorReporting.swift */; };
@@ -44,6 +45,7 @@
 		505322FC195C1BE700501609 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		50532301195C296300501609 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		50532303195C4B3C00501609 /* ErrorIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorIndicator.swift; sourceTree = "<group>"; };
+		506BF0D9196EAAFF001088BD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		50783248195B003F00C41DDD /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		5078324A195B012900C41DDD /* ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorReporting.swift; sourceTree = "<group>"; };
 		5078324C195B018D00C41DDD /* TextField+ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+ErrorReporting.swift"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				50FC283A19654F3600C213BB /* Controller */,
 				50B6C83A195AA20100B2561B /* AppDelegate.swift */,
 				50B6C839195AA20100B2561B /* Info.plist */,
+				506BF0D9196EAAFF001088BD /* Main.storyboard */,
 			);
 			path = HelloForm;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B6C86C195ABBD900B2561B /* ViewController.xib in Resources */,
+				506BF0DA196EAAFF001088BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
