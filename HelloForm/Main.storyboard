@@ -7,7 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="lhi-M6-zTM">
             <objects>
-                <navigationController navigationBarHidden="YES" id="leS-cQ-4hP" sceneMemberID="viewController">
+                <navigationController id="leS-cQ-4hP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hz7-Pv-ZsZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -20,7 +20,7 @@
             </objects>
             <point key="canvasLocation" x="464" y="385"/>
         </scene>
-        <!--Event List View Controller-->
+        <!--Event List View Controller - Event List-->
         <scene sceneID="RYh-eb-R37">
             <objects>
                 <tableViewController id="ORJ-mu-NOp" customClass="EventListViewController" customModule="HelloForm" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,13 +60,15 @@
                             <outlet property="delegate" destination="ORJ-mu-NOp" id="OJj-uh-XIy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="tlm-e9-Qrq"/>
+                    <navigationItem key="navigationItem" title="Event List" id="tlm-e9-Qrq">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="1h5-tr-GEL"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9Z-er-xmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="877" y="385"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Payment Form-->
         <scene sceneID="3ET-Fs-i0t">
             <objects>
                 <tableViewController id="6ft-sz-0Or" customClass="ViewController" customModule="HelloForm" customModuleProvider="target" sceneMemberID="viewController">
@@ -197,7 +199,7 @@
                             <outlet property="delegate" destination="6ft-sz-0Or" id="qEK-OB-kea"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="upg-JQ-YKd"/>
+                    <navigationItem key="navigationItem" title="Payment Form" id="upg-JQ-YKd"/>
                     <connections>
                         <outlet property="cvcField" destination="8Qq-Mz-Xq4" id="C8D-WJ-R12"/>
                         <outlet property="emailField" destination="qzt-M3-VB4" id="LVD-7r-h6X"/>
