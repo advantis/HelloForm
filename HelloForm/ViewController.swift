@@ -72,6 +72,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction
+    func textFieldDidReturn(sender: FormNavigation) {
+        if let nextField = sender.nextField as? UIResponder {
+            nextField.becomeFirstResponder()
+        }
+    }
+
+    @IBAction
     func submit() {
         form.submitWithHandler({result in
             switch result {

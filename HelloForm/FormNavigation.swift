@@ -4,6 +4,7 @@
 
 import UIKit
 
+@objc
 protocol FormNavigation {
     var nextField: UIResponder? {get}
 }

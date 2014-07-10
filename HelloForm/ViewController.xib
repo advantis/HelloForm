@@ -33,6 +33,7 @@
                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                     <connections>
                         <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="ypK-x5-va0"/>
+                        <action selector="textFieldDidReturn:" destination="-1" eventType="editingDidEndOnExit" id="tmh-SP-rAX"/>
                         <outlet property="nextField" destination="L0b-jx-pRV" id="zo4-4g-ZGP"/>
                     </connections>
                 </textField>
@@ -51,6 +52,7 @@
                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                     <connections>
                         <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="RFB-Ko-pXg"/>
+                        <action selector="textFieldDidReturn:" destination="-1" eventType="editingDidEndOnExit" id="8Mz-qR-UjR"/>
                         <outlet property="nextField" destination="Zfz-AC-0pf" id="Nrk-Hi-Rfu"/>
                     </connections>
                 </textField>
@@ -60,6 +62,7 @@
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                     <connections>
                         <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="2qM-b8-us4"/>
+                        <action selector="textFieldDidReturn:" destination="-1" eventType="editingDidEndOnExit" id="9ai-Bi-TUi"/>
                     </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card #" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L0b-jx-pRV" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
@@ -68,6 +71,7 @@
                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                     <connections>
                         <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="Rzk-1e-rqb"/>
+                        <action selector="textFieldDidReturn:" destination="-1" eventType="editingDidEndOnExit" id="Khc-s8-KXO"/>
                         <outlet property="nextField" destination="lk1-7o-LuH" id="FWk-wP-Zeh"/>
                     </connections>
                 </textField>
