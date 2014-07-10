@@ -6,7 +6,6 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    var event: Event?
     var form: PaymentForm! = nil
 
     @lazy var updater: BatchUpdater = BatchUpdater(self.form)
