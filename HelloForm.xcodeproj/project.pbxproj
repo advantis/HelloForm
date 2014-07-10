@@ -28,6 +28,7 @@
 		50C7D5B1196D1B8000520AEB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C7D5B0196D1B8000520AEB /* Result.swift */; };
 		50C95382196A970F00DCCEC0 /* ViewController+EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */; };
 		50C95384196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */; };
+		50D4AE46196E62F9003C72F0 /* FormNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4AE45196E62F9003C72F0 /* FormNavigation.swift */; };
 		50EBD5A6195D86F600393D96 /* ExpiryValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */; };
 		50FC28351964953A00C213BB /* PaymentFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC28341964953A00C213BB /* PaymentFormValidator.swift */; };
 		50FC283C19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC283B19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift */; };
@@ -61,6 +62,7 @@
 		50C7D5B0196D1B8000520AEB /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+EventPresenter.swift"; sourceTree = "<group>"; };
 		50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ErrorIndicator+ErrorReporting.swift"; sourceTree = "<group>"; };
+		50D4AE45196E62F9003C72F0 /* FormNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormNavigation.swift; sourceTree = "<group>"; };
 		50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpiryValidator.swift; sourceTree = "<group>"; };
 		50FC28341964953A00C213BB /* PaymentFormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentFormValidator.swift; sourceTree = "<group>"; };
 		50FC283B19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+PaymentFormValidatorDelegate.swift"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				508E95E4195D4FC2007F64E3 /* Observable.swift */,
 				50B6C863195AADC000B2561B /* EventPresenter.swift */,
 				5078324A195B012900C41DDD /* ErrorReporting.swift */,
+				50D4AE45196E62F9003C72F0 /* FormNavigation.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				5078324D195B018D00C41DDD /* TextField+ErrorReporting.swift in Sources */,
 				50B6C860195AA4D600B2561B /* Event.swift in Sources */,
 				50195B96195ADA69006B3380 /* RegexValidator.swift in Sources */,
+				50D4AE46196E62F9003C72F0 /* FormNavigation.swift in Sources */,
 				50783249195B003F00C41DDD /* TextField.swift in Sources */,
 				50532304195C4B3C00501609 /* ErrorIndicator.swift in Sources */,
 				50532302195C296300501609 /* Observer.swift in Sources */,

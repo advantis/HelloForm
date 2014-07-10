@@ -30,9 +30,11 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13v-J4-q7C" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
                     <rect key="frame" x="20" y="136" width="280" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                     <connections>
                         <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="ypK-x5-va0"/>
+                        <action selector="textFieldDidReturn:" destination="-1" eventType="editingDidEndOnExit" id="tmh-SP-rAX"/>
+                        <outlet property="nextField" destination="L0b-jx-pRV" id="zo4-4g-ZGP"/>
                     </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZI4-C6-iuR">
@@ -47,25 +49,30 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lk1-7o-LuH" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
                     <rect key="frame" x="20" y="236" width="130" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                     <connections>
                         <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="RFB-Ko-pXg"/>
+                        <action selector="textFieldDidReturn:" destination="-1" eventType="editingDidEndOnExit" id="8Mz-qR-UjR"/>
+                        <outlet property="nextField" destination="Zfz-AC-0pf" id="Nrk-Hi-Rfu"/>
                     </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zfz-AC-0pf" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
                     <rect key="frame" x="170" y="236" width="130" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                     <connections>
                         <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="2qM-b8-us4"/>
+                        <action selector="textFieldDidReturn:" destination="-1" eventType="editingDidEndOnExit" id="9ai-Bi-TUi"/>
                     </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card #" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L0b-jx-pRV" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
                     <rect key="frame" x="20" y="186" width="280" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                     <connections>
                         <action selector="contentDidChange" destination="-1" eventType="editingChanged" id="Rzk-1e-rqb"/>
+                        <action selector="textFieldDidReturn:" destination="-1" eventType="editingDidEndOnExit" id="Khc-s8-KXO"/>
+                        <outlet property="nextField" destination="lk1-7o-LuH" id="FWk-wP-Zeh"/>
                     </connections>
                 </textField>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xv-01-1yH">
