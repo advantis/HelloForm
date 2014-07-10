@@ -4,5 +4,8 @@
 
 import UIKit
 
-class TextField: UITextField {
+class TextField: UITextField, FormNavigation {
+
+    @IBOutlet
+    var nextField: UIResponder?
 }
