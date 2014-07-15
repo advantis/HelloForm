@@ -66,6 +66,9 @@
                     <navigationItem key="navigationItem" title="Event List" id="tlm-e9-Qrq">
                         <barButtonItem key="backBarButtonItem" title="Back" id="1h5-tr-GEL"/>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Vr9-aF-R3e">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9Z-er-xmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

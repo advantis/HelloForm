@@ -20,6 +20,7 @@ class EventListViewController: UITableViewController, EventContext {
                 case .Success(let events):
                     self!.events = events
                     self!.tableView.reloadData()
+                    self!.refreshControl?.endRefreshing()
                 case .Failure(let error):
                     println(error)
             }
@@ -29,6 +30,9 @@ class EventListViewController: UITableViewController, EventContext {
     override func viewDidLoad() {
         super.viewDidLoad()
         reloadData()
+
+        // TODO: Set this in Interface Builder when possible
+        refreshControl.addTarget(self, action: "reloadData", forControlEvents: UIControlEvents.ValueChanged)
     }
 
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
