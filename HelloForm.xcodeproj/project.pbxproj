@@ -10,6 +10,7 @@
 		50195B96195ADA69006B3380 /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50195B95195ADA69006B3380 /* RegexValidator.swift */; };
 		501EBFCD196ACD6500D70506 /* PaymentForm+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */; };
 		5023BE97196EF7C200BD5E82 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023BE96196EF7C200BD5E82 /* EventListViewController.swift */; };
+		5023BE99196F08FF00BD5E82 /* EventContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023BE98196F08FF00BD5E82 /* EventContext.swift */; };
 		5023BE9B196F18D900BD5E82 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023BE9A196F18D900BD5E82 /* JSON.swift */; };
 		505322FD195C1BE700501609 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505322FC195C1BE700501609 /* EmailValidator.swift */; };
 		50532302195C296300501609 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50532301195C296300501609 /* Observer.swift */; };
@@ -45,6 +46,7 @@
 		50195B95195ADA69006B3380 /* RegexValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
 		501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentForm+Networking.swift"; sourceTree = "<group>"; };
 		5023BE96196EF7C200BD5E82 /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		5023BE98196F08FF00BD5E82 /* EventContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventContext.swift; sourceTree = "<group>"; };
 		5023BE9A196F18D900BD5E82 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		505322FC195C1BE700501609 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		50532301195C296300501609 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				50B6C863195AADC000B2561B /* EventPresenter.swift */,
 				5078324A195B012900C41DDD /* ErrorReporting.swift */,
 				50D4AE45196E62F9003C72F0 /* FormNavigation.swift */,
+				5023BE98196F08FF00BD5E82 /* EventContext.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				50B9A944195B59D000F31D66 /* Validator.swift in Sources */,
 				50B6C85E195AA34E00B2561B /* PaymentForm.swift in Sources */,
 				50B6C83D195AA20100B2561B /* ViewController.swift in Sources */,
+				5023BE99196F08FF00BD5E82 /* EventContext.swift in Sources */,
 				50FC28351964953A00C213BB /* PaymentFormValidator.swift in Sources */,
 				50B6C83B195AA20100B2561B /* AppDelegate.swift in Sources */,
 				505322FD195C1BE700501609 /* EmailValidator.swift in Sources */,
