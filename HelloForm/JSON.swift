@@ -11,6 +11,10 @@ enum JSON {
     case JNum(Double)
     case JNull
 
+    init(data: NSData) {
+        self = JSON(NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: nil))
+    }
+
     init(_ value: AnyObject) {
         switch value {
             case let string as NSString:

@@ -10,8 +10,7 @@ extension Event {
     class func listEvents(handler: EventListHandler) -> Cancelable {
         let url = NSBundle.mainBundle().URLForResource("Event", withExtension: "json")
         let data = NSData(contentsOfURL: url)
-        let object : AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: nil)
-        let json = JSON(object)
+        let json = JSON(data: data)
         let event = Event(attributes: json, context: EventParser())
         handler(Result.Success(Box([event])))
         return NetworkOperation()
