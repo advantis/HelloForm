@@ -13,6 +13,9 @@ class ViewController: UITableViewController {
     @lazy var expiryFormatter = NSDateFormatter(format: "MM/yyyy")
 
     @IBOutlet
+    var eventName: UILabel
+
+    @IBOutlet
     var emailField: TextField
 
     @IBOutlet
@@ -50,6 +53,7 @@ class ViewController: UITableViewController {
     }
 
     func reloadData(form: PaymentForm) {
+        eventName.text = form.event.name
         emailField.text = form.email
         quantityLabel.text = String(form.quantity)
         quantityStepper.maximumValue = Double(form.event.quantity)

@@ -82,11 +82,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="y0l-vs-IJB">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
+                        <label key="tableHeaderView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DZ6-1P-skb">
+                            <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <sections>
                             <tableViewSection id="2cH-tR-SNe">
                                 <cells>
@@ -96,14 +98,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" value="1" minimumValue="1" maximumValue="100" id="H2N-DL-LV1">
-                                                    <rect key="frame" x="206" y="11" width="94" height="29"/>
+                                                    <rect key="frame" x="131" y="11" width="94" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="valueChanged" id="H4U-A1-OLB"/>
                                                     </connections>
                                                 </stepper>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4d-eZ-OqM">
-                                                    <rect key="frame" x="170" y="11" width="28" height="29"/>
+                                                    <rect key="frame" x="95" y="11" width="28" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -209,6 +211,7 @@
                     <connections>
                         <outlet property="cvcField" destination="8Qq-Mz-Xq4" id="C8D-WJ-R12"/>
                         <outlet property="emailField" destination="qzt-M3-VB4" id="LVD-7r-h6X"/>
+                        <outlet property="eventName" destination="DZ6-1P-skb" id="gKF-jV-JQ6"/>
                         <outlet property="expiryField" destination="4kU-MJ-Kwf" id="Zsa-XV-LZX"/>
                         <outlet property="numberField" destination="FSY-Vj-hIQ" id="XT2-Cx-fVh"/>
                         <outlet property="quantityLabel" destination="W4d-eZ-OqM" id="hW6-vL-kkL"/>
