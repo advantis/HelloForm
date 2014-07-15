@@ -8,11 +8,14 @@ typealias EventListHandler = (Result<Event[]>) -> Void
 
 extension Event {
     class func listEvents(handler: EventListHandler) -> Cancelable {
-        let url = NSBundle.mainBundle().URLForResource("Event", withExtension: "json")
-        let data = NSData(contentsOfURL: url)
-        let json = JSON(data: data)
-        let event = Event(attributes: json, context: EventParser())
-        handler(Result.Success(Box([event])))
-        return NetworkOperation()
+        let request = NetworkOperation<Event[]>() {
+            return NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("EventList", withExtension: "json"))
+        }
+        request.parser = EventParser()
+        request.completion = {events in
+            handler(Result.Success(Box(events)))
+        }
+        request.start()
+        return request
     }
 }

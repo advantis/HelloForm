@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5016023219756F8400202330 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016023119756F8400202330 /* ResponseSerialization.swift */; };
 		50195B96195ADA69006B3380 /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50195B95195ADA69006B3380 /* RegexValidator.swift */; };
 		501EBFCD196ACD6500D70506 /* PaymentForm+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */; };
 		50210D5E1975476C007AB351 /* EventParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50210D5D1975476C007AB351 /* EventParser.swift */; };
@@ -25,7 +26,7 @@
 		5078324D195B018D00C41DDD /* TextField+ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078324C195B018D00C41DDD /* TextField+ErrorReporting.swift */; };
 		508E95E5195D4FC2007F64E3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508E95E4195D4FC2007F64E3 /* Observable.swift */; };
 		50AD02F4196421840076836B /* BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AD02F3196421840076836B /* BatchUpdater.swift */; };
-		50AE9C7B19746BB20029BACA /* Event.json in Resources */ = {isa = PBXBuildFile; fileRef = 50AE9C7A19746BB20029BACA /* Event.json */; };
+		50AE9C7B19746BB20029BACA /* EventList.json in Resources */ = {isa = PBXBuildFile; fileRef = 50AE9C7A19746BB20029BACA /* EventList.json */; };
 		50B6C83B195AA20100B2561B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83A195AA20100B2561B /* AppDelegate.swift */; };
 		50B6C83D195AA20100B2561B /* PaymentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83C195AA20100B2561B /* PaymentFormViewController.swift */; };
 		50B6C85E195AA34E00B2561B /* PaymentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C85D195AA34E00B2561B /* PaymentForm.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5016023119756F8400202330 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
 		50195B95195ADA69006B3380 /* RegexValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
 		501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentForm+Networking.swift"; sourceTree = "<group>"; };
 		50210D5D1975476C007AB351 /* EventParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventParser.swift; sourceTree = "<group>"; };
@@ -65,7 +67,7 @@
 		5078324C195B018D00C41DDD /* TextField+ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+ErrorReporting.swift"; sourceTree = "<group>"; };
 		508E95E4195D4FC2007F64E3 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		50AD02F3196421840076836B /* BatchUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchUpdater.swift; sourceTree = "<group>"; };
-		50AE9C7A19746BB20029BACA /* Event.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Event.json; sourceTree = "<group>"; };
+		50AE9C7A19746BB20029BACA /* EventList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventList.json; sourceTree = "<group>"; };
 		50B6C835195AA20100B2561B /* HelloForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B6C839195AA20100B2561B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B6C83A195AA20100B2561B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				50210D5C1975475E007AB351 /* Parser */,
 				50210D6319754A23007AB351 /* NetworkOperation.swift */,
+				5016023119756F8400202330 /* ResponseSerialization.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -158,7 +161,7 @@
 		50AE9C79197467220029BACA /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				50AE9C7A19746BB20029BACA /* Event.json */,
+				50AE9C7A19746BB20029BACA /* EventList.json */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -361,7 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50AE9C7B19746BB20029BACA /* Event.json in Resources */,
+				50AE9C7B19746BB20029BACA /* EventList.json in Resources */,
 				506BF0DA196EAAFF001088BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +407,7 @@
 				50FC283E19655AC400C213BB /* PaymentFormViewController+Observer.swift in Sources */,
 				50C95384196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift in Sources */,
 				50EBD5A6195D86F600393D96 /* ExpiryValidator.swift in Sources */,
+				5016023219756F8400202330 /* ResponseSerialization.swift in Sources */,
 				50B6C864195AADC000B2561B /* EventPresenter.swift in Sources */,
 				50FC28481965807800C213BB /* CardNumberValidator.swift in Sources */,
 				50210D5E1975476C007AB351 /* EventParser.swift in Sources */,
