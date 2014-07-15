@@ -4,14 +4,16 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class PaymentFormViewController: UITableViewController {
 
-    var event: Event?
     var form: PaymentForm! = nil
 
     @lazy var updater: BatchUpdater = BatchUpdater(self.form)
     @lazy var validator: PaymentFormValidator = PaymentFormValidator(delegate: self)
     @lazy var expiryFormatter = NSDateFormatter(format: "MM/yyyy")
+
+    @IBOutlet
+    var eventName: UILabel
 
     @IBOutlet
     var emailField: TextField
@@ -51,6 +53,7 @@ class ViewController: UITableViewController {
     }
 
     func reloadData(form: PaymentForm) {
+        eventName.text = form.event.name
         emailField.text = form.email
         quantityLabel.text = String(form.quantity)
         quantityStepper.maximumValue = Double(form.event.quantity)

@@ -4,7 +4,7 @@
 
 import Foundation
 
-extension ViewController: PaymentFormValidatorDelegate {
+extension PaymentFormViewController: PaymentFormValidatorDelegate {
     
     func didValidateCvcWithError(error: NSError?) {
         cvcField.setError(error)
