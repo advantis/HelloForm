@@ -7,7 +7,7 @@ import UIKit
 class EventListViewController: UITableViewController, EventContext {
 
     var events: Event[] = []
-    @lazy var dateFormatter = NSDateFormatter(format: "yyyy-MM-dd'T'HH:mm:ss")
+    @lazy var dateFormatter = NSDateFormatter(format: "dd/MM/yy")
 
     func prepareForPurchase(destination: AnyObject!) {
         let indexPath = tableView.indexPathForSelectedRow()
@@ -25,12 +25,15 @@ class EventListViewController: UITableViewController, EventContext {
     }
 
     func loadEvents() {
-        let url = NSBundle.mainBundle().URLForResource("Event", withExtension: "json")
-        let data = NSData(contentsOfURL: url)
-        let object : AnyObject! = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: nil)
-        let json = JSON(object)
-        let event = Event(attributes: json, context: self)
-        events = [event]
+        Event.listEvents({result in
+            switch result {
+                case .Success(let events):
+                    self.events = events
+                    self.tableView.reloadData()
+                case .Failure(let error):
+                    println(error)
+            }
+        })
     }
 
     override func viewDidLoad() {

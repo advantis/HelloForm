@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		50195B96195ADA69006B3380 /* RegexValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50195B95195ADA69006B3380 /* RegexValidator.swift */; };
 		501EBFCD196ACD6500D70506 /* PaymentForm+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */; };
+		50210D5E1975476C007AB351 /* EventParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50210D5D1975476C007AB351 /* EventParser.swift */; };
+		50210D601975479A007AB351 /* Event+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50210D5F1975479A007AB351 /* Event+Network.swift */; };
+		50210D621975491D007AB351 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50210D611975491D007AB351 /* Cancelable.swift */; };
+		50210D6419754A23007AB351 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50210D6319754A23007AB351 /* NetworkOperation.swift */; };
 		5023BE97196EF7C200BD5E82 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023BE96196EF7C200BD5E82 /* EventListViewController.swift */; };
 		5023BE99196F08FF00BD5E82 /* EventContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023BE98196F08FF00BD5E82 /* EventContext.swift */; };
 		5023BE9B196F18D900BD5E82 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5023BE9A196F18D900BD5E82 /* JSON.swift */; };
@@ -46,6 +50,10 @@
 /* Begin PBXFileReference section */
 		50195B95195ADA69006B3380 /* RegexValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexValidator.swift; sourceTree = "<group>"; };
 		501EBFCC196ACD6500D70506 /* PaymentForm+Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentForm+Networking.swift"; sourceTree = "<group>"; };
+		50210D5D1975476C007AB351 /* EventParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventParser.swift; sourceTree = "<group>"; };
+		50210D5F1975479A007AB351 /* Event+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+Network.swift"; sourceTree = "<group>"; };
+		50210D611975491D007AB351 /* Cancelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		50210D6319754A23007AB351 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		5023BE96196EF7C200BD5E82 /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		5023BE98196F08FF00BD5E82 /* EventContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventContext.swift; sourceTree = "<group>"; };
 		5023BE9A196F18D900BD5E82 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -93,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50210D5B1975471F007AB351 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				50210D5C1975475E007AB351 /* Parser */,
+				50210D6319754A23007AB351 /* NetworkOperation.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		50210D5C1975475E007AB351 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				50210D5D1975476C007AB351 /* EventParser.swift */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
 		5023BE95196EF7B000BD5E82 /* EventList */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +210,7 @@
 		50B6C861195AAD7A00B2561B /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				50210D5B1975471F007AB351 /* Network */,
 				50FC28421965640F00C213BB /* Extension */,
 				50B6C862195AAD8300B2561B /* Protocol */,
 				50532300195C21B400501609 /* Validator */,
@@ -203,6 +229,7 @@
 				5078324A195B012900C41DDD /* ErrorReporting.swift */,
 				50D4AE45196E62F9003C72F0 /* FormNavigation.swift */,
 				5023BE98196F08FF00BD5E82 /* EventContext.swift */,
+				50210D611975491D007AB351 /* Cancelable.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -212,6 +239,7 @@
 			children = (
 				50B6C85F195AA4D600B2561B /* Event.swift */,
 				50B6C865195AB69800B2561B /* Event+Printable.swift */,
+				50210D5F1975479A007AB351 /* Event+Network.swift */,
 			);
 			name = Event;
 			sourceTree = "<group>";
@@ -357,11 +385,14 @@
 				50195B96195ADA69006B3380 /* RegexValidator.swift in Sources */,
 				50D4AE46196E62F9003C72F0 /* FormNavigation.swift in Sources */,
 				5023BE9B196F18D900BD5E82 /* JSON.swift in Sources */,
+				50210D601975479A007AB351 /* Event+Network.swift in Sources */,
 				50783249195B003F00C41DDD /* TextField.swift in Sources */,
 				50532304195C4B3C00501609 /* ErrorIndicator.swift in Sources */,
 				5023BE97196EF7C200BD5E82 /* EventListViewController.swift in Sources */,
+				50210D621975491D007AB351 /* Cancelable.swift in Sources */,
 				50F908BA1975001C007F12DD /* EventListCell.swift in Sources */,
 				50532302195C296300501609 /* Observer.swift in Sources */,
+				50210D6419754A23007AB351 /* NetworkOperation.swift in Sources */,
 				50FC28441965644C00C213BB /* NSDateFormatter.swift in Sources */,
 				50FC284619656FAB00C213BB /* CardCvcValidator.swift in Sources */,
 				5078324B195B012900C41DDD /* ErrorReporting.swift in Sources */,
@@ -379,6 +410,7 @@
 				50EBD5A6195D86F600393D96 /* ExpiryValidator.swift in Sources */,
 				50B6C864195AADC000B2561B /* EventPresenter.swift in Sources */,
 				50FC28481965807800C213BB /* CardNumberValidator.swift in Sources */,
+				50210D5E1975476C007AB351 /* EventParser.swift in Sources */,
 				50AD02F4196421840076836B /* BatchUpdater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
