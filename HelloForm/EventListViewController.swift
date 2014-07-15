@@ -42,10 +42,10 @@ class EventListViewController: UITableViewController, EventContext {
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         switch segue.identifier! {
-        case "buy":
-            prepareForPurchase(segue.destinationViewController)
-        default:
-            super.prepareForSegue(segue, sender: sender)
+            case "buy":
+                prepareForPurchase(segue.destinationViewController)
+            default:
+                super.prepareForSegue(segue, sender: sender)
         }
     }
 
