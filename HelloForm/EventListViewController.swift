@@ -7,13 +7,15 @@ import UIKit
 class EventListViewController: UITableViewController, EventContext {
 
     var events: Event[] = []
+    weak var request: Cancelable?
 
     @lazy
     var dateFormatter = NSDateFormatter(format: "dd/MM/yy")
 
     func reloadData() {
+        request?.cancel()
         // TODO: Replace 'weak' with 'unowned' when it stop crashing
-        Event.listEvents({[weak self] result in
+        request = Event.listEvents({[weak self] result in
             switch result {
                 case .Success(let events):
                     self!.events = events
