@@ -4,7 +4,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class PaymentFormViewController: UITableViewController {
 
     var form: PaymentForm! = nil
 

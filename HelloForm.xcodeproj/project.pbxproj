@@ -27,20 +27,20 @@
 		50AD02F4196421840076836B /* BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AD02F3196421840076836B /* BatchUpdater.swift */; };
 		50AE9C7B19746BB20029BACA /* Event.json in Resources */ = {isa = PBXBuildFile; fileRef = 50AE9C7A19746BB20029BACA /* Event.json */; };
 		50B6C83B195AA20100B2561B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83A195AA20100B2561B /* AppDelegate.swift */; };
-		50B6C83D195AA20100B2561B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83C195AA20100B2561B /* ViewController.swift */; };
+		50B6C83D195AA20100B2561B /* PaymentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83C195AA20100B2561B /* PaymentFormViewController.swift */; };
 		50B6C85E195AA34E00B2561B /* PaymentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C85D195AA34E00B2561B /* PaymentForm.swift */; };
 		50B6C860195AA4D600B2561B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C85F195AA4D600B2561B /* Event.swift */; };
 		50B6C864195AADC000B2561B /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C863195AADC000B2561B /* EventPresenter.swift */; };
 		50B9A944195B59D000F31D66 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A943195B59D000F31D66 /* Validator.swift */; };
 		50C7D5B1196D1B8000520AEB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C7D5B0196D1B8000520AEB /* Result.swift */; };
-		50C95382196A970F00DCCEC0 /* ViewController+EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */; };
+		50C95382196A970F00DCCEC0 /* PaymentFormViewController+EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95381196A970F00DCCEC0 /* PaymentFormViewController+EventPresenter.swift */; };
 		50C95384196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */; };
 		50D4AE46196E62F9003C72F0 /* FormNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4AE45196E62F9003C72F0 /* FormNavigation.swift */; };
 		50EBD5A6195D86F600393D96 /* ExpiryValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */; };
 		50F908BA1975001C007F12DD /* EventListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F908B91975001C007F12DD /* EventListCell.swift */; };
 		50FC28351964953A00C213BB /* PaymentFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC28341964953A00C213BB /* PaymentFormValidator.swift */; };
-		50FC283C19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC283B19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift */; };
-		50FC283E19655AC400C213BB /* ViewController+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC283D19655AC400C213BB /* ViewController+Observer.swift */; };
+		50FC283C19654F5B00C213BB /* PaymentFormViewController+PaymentFormValidatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC283B19654F5B00C213BB /* PaymentFormViewController+PaymentFormValidatorDelegate.swift */; };
+		50FC283E19655AC400C213BB /* PaymentFormViewController+Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC283D19655AC400C213BB /* PaymentFormViewController+Observer.swift */; };
 		50FC28441965644C00C213BB /* NSDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC28431965644C00C213BB /* NSDateFormatter.swift */; };
 		50FC284619656FAB00C213BB /* CardCvcValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC284519656FAB00C213BB /* CardCvcValidator.swift */; };
 		50FC28481965807800C213BB /* CardNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC28471965807800C213BB /* CardNumberValidator.swift */; };
@@ -69,20 +69,20 @@
 		50B6C835195AA20100B2561B /* HelloForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B6C839195AA20100B2561B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B6C83A195AA20100B2561B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50B6C83C195AA20100B2561B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50B6C83C195AA20100B2561B /* PaymentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormViewController.swift; sourceTree = "<group>"; };
 		50B6C85D195AA34E00B2561B /* PaymentForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentForm.swift; sourceTree = "<group>"; };
 		50B6C85F195AA4D600B2561B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		50B6C863195AADC000B2561B /* EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
 		50B9A943195B59D000F31D66 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		50C7D5B0196D1B8000520AEB /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+EventPresenter.swift"; sourceTree = "<group>"; };
+		50C95381196A970F00DCCEC0 /* PaymentFormViewController+EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentFormViewController+EventPresenter.swift"; sourceTree = "<group>"; };
 		50C95383196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ErrorIndicator+ErrorReporting.swift"; sourceTree = "<group>"; };
 		50D4AE45196E62F9003C72F0 /* FormNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormNavigation.swift; sourceTree = "<group>"; };
 		50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpiryValidator.swift; sourceTree = "<group>"; };
 		50F908B91975001C007F12DD /* EventListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListCell.swift; sourceTree = "<group>"; };
 		50FC28341964953A00C213BB /* PaymentFormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentFormValidator.swift; sourceTree = "<group>"; };
-		50FC283B19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+PaymentFormValidatorDelegate.swift"; sourceTree = "<group>"; };
-		50FC283D19655AC400C213BB /* ViewController+Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Observer.swift"; sourceTree = "<group>"; };
+		50FC283B19654F5B00C213BB /* PaymentFormViewController+PaymentFormValidatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentFormViewController+PaymentFormValidatorDelegate.swift"; sourceTree = "<group>"; };
+		50FC283D19655AC400C213BB /* PaymentFormViewController+Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaymentFormViewController+Observer.swift"; sourceTree = "<group>"; };
 		50FC28431965644C00C213BB /* NSDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateFormatter.swift; sourceTree = "<group>"; };
 		50FC284519656FAB00C213BB /* CardCvcValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCvcValidator.swift; sourceTree = "<group>"; };
 		50FC28471965807800C213BB /* CardNumberValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNumberValidator.swift; sourceTree = "<group>"; };
@@ -268,15 +268,15 @@
 			name = ErrorIndicator;
 			sourceTree = "<group>";
 		};
-		50C95387196AA0A100DCCEC0 /* ViewController */ = {
+		50C95387196AA0A100DCCEC0 /* PaymentForm */ = {
 			isa = PBXGroup;
 			children = (
-				50B6C83C195AA20100B2561B /* ViewController.swift */,
-				50FC283D19655AC400C213BB /* ViewController+Observer.swift */,
-				50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */,
-				50FC283B19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift */,
+				50B6C83C195AA20100B2561B /* PaymentFormViewController.swift */,
+				50FC283D19655AC400C213BB /* PaymentFormViewController+Observer.swift */,
+				50C95381196A970F00DCCEC0 /* PaymentFormViewController+EventPresenter.swift */,
+				50FC283B19654F5B00C213BB /* PaymentFormViewController+PaymentFormValidatorDelegate.swift */,
 			);
-			name = ViewController;
+			name = PaymentForm;
 			sourceTree = "<group>";
 		};
 		50F908B819750008007F12DD /* Cell */ = {
@@ -291,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				5023BE95196EF7B000BD5E82 /* EventList */,
-				50C95387196AA0A100DCCEC0 /* ViewController */,
+				50C95387196AA0A100DCCEC0 /* PaymentForm */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C7D5B1196D1B8000520AEB /* Result.swift in Sources */,
-				50FC283C19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift in Sources */,
+				50FC283C19654F5B00C213BB /* PaymentFormViewController+PaymentFormValidatorDelegate.swift in Sources */,
 				501EBFCD196ACD6500D70506 /* PaymentForm+Networking.swift in Sources */,
 				5078324D195B018D00C41DDD /* TextField+ErrorReporting.swift in Sources */,
 				50B6C860195AA4D600B2561B /* Event.swift in Sources */,
@@ -394,14 +394,14 @@
 				5078324B195B012900C41DDD /* ErrorReporting.swift in Sources */,
 				50B9A944195B59D000F31D66 /* Validator.swift in Sources */,
 				50B6C85E195AA34E00B2561B /* PaymentForm.swift in Sources */,
-				50B6C83D195AA20100B2561B /* ViewController.swift in Sources */,
+				50B6C83D195AA20100B2561B /* PaymentFormViewController.swift in Sources */,
 				5023BE99196F08FF00BD5E82 /* EventContext.swift in Sources */,
 				50FC28351964953A00C213BB /* PaymentFormValidator.swift in Sources */,
 				50B6C83B195AA20100B2561B /* AppDelegate.swift in Sources */,
 				505322FD195C1BE700501609 /* EmailValidator.swift in Sources */,
 				508E95E5195D4FC2007F64E3 /* Observable.swift in Sources */,
-				50C95382196A970F00DCCEC0 /* ViewController+EventPresenter.swift in Sources */,
-				50FC283E19655AC400C213BB /* ViewController+Observer.swift in Sources */,
+				50C95382196A970F00DCCEC0 /* PaymentFormViewController+EventPresenter.swift in Sources */,
+				50FC283E19655AC400C213BB /* PaymentFormViewController+Observer.swift in Sources */,
 				50C95384196A9F5200DCCEC0 /* ErrorIndicator+ErrorReporting.swift in Sources */,
 				50EBD5A6195D86F600393D96 /* ExpiryValidator.swift in Sources */,
 				50B6C864195AADC000B2561B /* EventPresenter.swift in Sources */,

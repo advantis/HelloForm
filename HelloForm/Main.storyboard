@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="877" y="385"/>
         </scene>
-        <!--View Controller - Payment Form-->
+        <!--Payment Form View Controller - Payment Form-->
         <scene sceneID="3ET-Fs-i0t">
             <objects>
-                <tableViewController id="6ft-sz-0Or" customClass="ViewController" customModule="HelloForm" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="6ft-sz-0Or" customClass="PaymentFormViewController" customModule="HelloForm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="HWt-zG-CCq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
