@@ -31,7 +31,6 @@
 		50B6C85E195AA34E00B2561B /* PaymentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C85D195AA34E00B2561B /* PaymentForm.swift */; };
 		50B6C860195AA4D600B2561B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C85F195AA4D600B2561B /* Event.swift */; };
 		50B6C864195AADC000B2561B /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C863195AADC000B2561B /* EventPresenter.swift */; };
-		50B6C866195AB69800B2561B /* Event+Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C865195AB69800B2561B /* Event+Printable.swift */; };
 		50B9A944195B59D000F31D66 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B9A943195B59D000F31D66 /* Validator.swift */; };
 		50C7D5B1196D1B8000520AEB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C7D5B0196D1B8000520AEB /* Result.swift */; };
 		50C95382196A970F00DCCEC0 /* ViewController+EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */; };
@@ -74,7 +73,6 @@
 		50B6C85D195AA34E00B2561B /* PaymentForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentForm.swift; sourceTree = "<group>"; };
 		50B6C85F195AA4D600B2561B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		50B6C863195AADC000B2561B /* EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
-		50B6C865195AB69800B2561B /* Event+Printable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+Printable.swift"; sourceTree = "<group>"; };
 		50B9A943195B59D000F31D66 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		50C7D5B0196D1B8000520AEB /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		50C95381196A970F00DCCEC0 /* ViewController+EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+EventPresenter.swift"; sourceTree = "<group>"; };
@@ -238,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				50B6C85F195AA4D600B2561B /* Event.swift */,
-				50B6C865195AB69800B2561B /* Event+Printable.swift */,
 				50210D5F1975479A007AB351 /* Event+Network.swift */,
 			);
 			name = Event;
@@ -377,7 +374,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C7D5B1196D1B8000520AEB /* Result.swift in Sources */,
-				50B6C866195AB69800B2561B /* Event+Printable.swift in Sources */,
 				50FC283C19654F5B00C213BB /* ViewController+PaymentFormValidatorDelegate.swift in Sources */,
 				501EBFCD196ACD6500D70506 /* PaymentForm+Networking.swift in Sources */,
 				5078324D195B018D00C41DDD /* TextField+ErrorReporting.swift in Sources */,
