@@ -146,6 +146,7 @@
                                                     <connections>
                                                         <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="editingChanged" id="ZWG-2S-PNm"/>
                                                         <action selector="textFieldDidReturn:" destination="6ft-sz-0Or" eventType="editingDidEndOnExit" id="iua-HA-hfH"/>
+                                                        <outlet property="delegate" destination="6ft-sz-0Or" id="pZ7-kj-VfA"/>
                                                         <outlet property="nextField" destination="4kU-MJ-Kwf" id="jSc-qm-3kx"/>
                                                     </connections>
                                                 </textField>
@@ -165,6 +166,7 @@
                                                     <connections>
                                                         <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="editingChanged" id="mZZ-lM-zX4"/>
                                                         <action selector="textFieldDidReturn:" destination="6ft-sz-0Or" eventType="editingDidEndOnExit" id="5zG-MD-I4Z"/>
+                                                        <outlet property="delegate" destination="6ft-sz-0Or" id="shl-OJ-ivR"/>
                                                     </connections>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry" minimumFontSize="17" id="4kU-MJ-Kwf" customClass="TextField" customModule="HelloForm" customModuleProvider="target">
@@ -175,6 +177,7 @@
                                                     <connections>
                                                         <action selector="contentDidChange" destination="6ft-sz-0Or" eventType="editingChanged" id="fva-QP-VId"/>
                                                         <action selector="textFieldDidReturn:" destination="6ft-sz-0Or" eventType="editingDidEndOnExit" id="a5v-3m-vzA"/>
+                                                        <outlet property="delegate" destination="6ft-sz-0Or" id="hT7-QD-gY1"/>
                                                         <outlet property="nextField" destination="8Qq-Mz-Xq4" id="c7c-e2-NNX"/>
                                                     </connections>
                                                 </textField>

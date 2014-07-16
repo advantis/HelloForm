@@ -27,6 +27,7 @@
 		508E95E5195D4FC2007F64E3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508E95E4195D4FC2007F64E3 /* Observable.swift */; };
 		50AD02F4196421840076836B /* BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AD02F3196421840076836B /* BatchUpdater.swift */; };
 		50AE9C7B19746BB20029BACA /* EventList.json in Resources */ = {isa = PBXBuildFile; fileRef = 50AE9C7A19746BB20029BACA /* EventList.json */; };
+		50AF9040197655610053E94B /* NumericValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF903F197655610053E94B /* NumericValidator.swift */; };
 		50B6C83B195AA20100B2561B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83A195AA20100B2561B /* AppDelegate.swift */; };
 		50B6C83D195AA20100B2561B /* PaymentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C83C195AA20100B2561B /* PaymentFormViewController.swift */; };
 		50B6C85E195AA34E00B2561B /* PaymentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B6C85D195AA34E00B2561B /* PaymentForm.swift */; };
@@ -68,6 +69,7 @@
 		508E95E4195D4FC2007F64E3 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		50AD02F3196421840076836B /* BatchUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchUpdater.swift; sourceTree = "<group>"; };
 		50AE9C7A19746BB20029BACA /* EventList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventList.json; sourceTree = "<group>"; };
+		50AF903F197655610053E94B /* NumericValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericValidator.swift; sourceTree = "<group>"; };
 		50B6C835195AA20100B2561B /* HelloForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B6C839195AA20100B2561B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B6C83A195AA20100B2561B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				50195B95195ADA69006B3380 /* RegexValidator.swift */,
 				505322FC195C1BE700501609 /* EmailValidator.swift */,
+				50AF903F197655610053E94B /* NumericValidator.swift */,
 				50EBD5A5195D86F600393D96 /* ExpiryValidator.swift */,
 				50FC284519656FAB00C213BB /* CardCvcValidator.swift */,
 				50FC28471965807800C213BB /* CardNumberValidator.swift */,
@@ -391,6 +394,7 @@
 				50210D621975491D007AB351 /* Cancelable.swift in Sources */,
 				50F908BA1975001C007F12DD /* EventListCell.swift in Sources */,
 				50532302195C296300501609 /* Observer.swift in Sources */,
+				50AF9040197655610053E94B /* NumericValidator.swift in Sources */,
 				50210D6419754A23007AB351 /* NetworkOperation.swift in Sources */,
 				50FC28441965644C00C213BB /* NSDateFormatter.swift in Sources */,
 				50FC284619656FAB00C213BB /* CardCvcValidator.swift in Sources */,
