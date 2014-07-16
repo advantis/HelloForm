@@ -10,7 +10,8 @@ class PaymentFormViewController: UITableViewController {
 
     @lazy var updater: BatchUpdater = BatchUpdater(self.form)
     @lazy var validator: PaymentFormValidator = PaymentFormValidator(delegate: self)
-    @lazy var inputFilter = NumericValidator()
+    @lazy var numericFilter = NumericInputFilter()
+    @lazy var expiryFilter = ExpiryInputFilter()
     @lazy var expiryFormatter = NSDateFormatter(format: "MM/yyyy")
 
     @IBOutlet
@@ -97,12 +98,15 @@ class PaymentFormViewController: UITableViewController {
 
 extension PaymentFormViewController: UITextFieldDelegate {
     func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool {
+        // TODO: Remove the bridging cast below when NSString/String API become consistent
+        let original: NSString = textField.text
+        let modified = original.stringByReplacingCharactersInRange(range, withString: string)
+
         switch textField {
-            case numberField, expiryField, cvcField:
-                // TODO: Remove the bridging cast below when NSString/String API become consistent
-                let original: NSString = textField.text
-                let modified = original.stringByReplacingCharactersInRange(range, withString: string)
-                return inputFilter.validate(modified, error: nil)
+            case numberField, cvcField:
+                return numericFilter.validate(modified, error: nil)
+            case expiryField:
+                return expiryFilter.validate(modified, error: nil)
             default:
                 return true
         }
