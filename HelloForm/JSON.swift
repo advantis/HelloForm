@@ -52,7 +52,6 @@ enum JSON {
         }
     }
 
-    @conversion
     func __conversion() -> Int! {
         switch self {
             case .JNum(let number):
@@ -62,7 +61,6 @@ enum JSON {
         }
     }
 
-    @conversion
     func __conversion() -> Double! {
         switch self {
             case .JNum(let number):
@@ -72,7 +70,6 @@ enum JSON {
         }
     }
 
-    @conversion
     func __conversion() -> String! {
         switch self {
             case .JStr(let string):
