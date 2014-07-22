@@ -4,11 +4,11 @@
 
 import Foundation
 
-typealias EventListHandler = (Result<Event[]>) -> Void
+typealias EventListHandler = (Result<[Event]>) -> Void
 
 extension Event {
     class func listEvents(handler: EventListHandler) -> Cancelable {
-        let request = NetworkOperation<Event[]>() {
+        let request = NetworkOperation<[Event]>() {
             return NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("EventList", withExtension: "json"))
         }
         request.parser = EventParser()

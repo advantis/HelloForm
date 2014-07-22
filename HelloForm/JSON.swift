@@ -6,8 +6,8 @@ import Foundation
 
 enum JSON {
     // TODO: Implement other node types
-    case JObj(Dictionary<String, JSON>)
-    case JSeq(Array<JSON>)
+    case JObj([String:JSON])
+    case JSeq([JSON])
     case JStr(String)
     case JNum(Double)
     case JNull
@@ -23,7 +23,7 @@ enum JSON {
             case let number as NSNumber:
                 self = .JNum(number.doubleValue)
             case let dictionary as NSDictionary:
-                var object: Dictionary<String, JSON> = [:]
+                var object: [String:JSON] = [:]
                 for (key: AnyObject, value: AnyObject) in dictionary {
                     if let keyString = key as? String {
                         object[keyString] = JSON(value)
@@ -31,7 +31,7 @@ enum JSON {
                 }
                 self = .JObj(object)
             case let array as NSArray:
-                var sequence: JSON[] = []
+                var sequence: [JSON] = []
                 for object: AnyObject in array {
                     sequence.append(JSON(object))
                 }
@@ -84,7 +84,7 @@ enum JSON {
 }
 
 extension JSON: Sequence {
-    func generate() -> IndexingGenerator<JSON[]> {
+    func generate() -> IndexingGenerator<[JSON]> {
         switch self {
             case .JSeq(let array):
                 return array.generate()

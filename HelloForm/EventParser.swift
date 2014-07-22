@@ -10,9 +10,9 @@ class EventParser: EventContext {
 }
 
 extension EventParser: ResponseSerialization {
-    func objectForResponse(response: NSURLResponse, data: NSData, error: NSErrorPointer) -> Event[] {
+    func objectForResponse(response: NSURLResponse, data: NSData, error: NSErrorPointer) -> [Event] {
         let json = JSON(data: data)
-        var events: Event[] = []
+        var events: [Event] = []
         for event in json {
             events.append(Event(attributes: event, context: self))
         }

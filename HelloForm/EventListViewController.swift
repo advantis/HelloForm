@@ -6,7 +6,7 @@ import UIKit
 
 class EventListViewController: UITableViewController, EventContext {
 
-    var events: Event[] = []
+    var events: [Event] = []
     weak var request: Cancelable?
 
     @lazy
