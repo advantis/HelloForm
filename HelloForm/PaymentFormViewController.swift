@@ -8,11 +8,11 @@ class PaymentFormViewController: UITableViewController {
 
     var form: PaymentForm! = nil
 
-    @lazy var updater: BatchUpdater = BatchUpdater(self.form)
-    @lazy var validator: PaymentFormValidator = PaymentFormValidator(delegate: self)
-    @lazy var numericFilter = NumericInputFilter()
-    @lazy var expiryFilter = ExpiryInputFilter()
-    @lazy var expiryFormatter = NSDateFormatter(format: "MM/yyyy")
+    lazy var updater: BatchUpdater = BatchUpdater(self.form)
+    lazy var validator: PaymentFormValidator = PaymentFormValidator(delegate: self)
+    lazy var numericFilter = NumericInputFilter()
+    lazy var expiryFilter = ExpiryInputFilter()
+    lazy var expiryFormatter = NSDateFormatter(format: "MM/yyyy")
 
     @IBOutlet
     var eventName: UILabel

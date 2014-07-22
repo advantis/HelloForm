@@ -9,7 +9,7 @@ class EventListViewController: UITableViewController, EventContext {
     var events: [Event] = []
     weak var request: Cancelable?
 
-    @lazy
+    lazy
     var dateFormatter = NSDateFormatter(format: "dd/MM/yy")
 
     func reloadData() {
