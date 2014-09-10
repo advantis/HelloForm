@@ -18,7 +18,7 @@ class RegexValidator: Validator {
         if let string = input as? String {
             isValid = predicate.evaluateWithObject(string)
         }
-        if !isValid && error {
+        if !isValid && error != nil {
             error.memory = self.error
         }
         return isValid

@@ -51,7 +51,7 @@ class PaymentFormValidator: Validator {
             isValid &= cvcValidator.validate(info, error: &error)
             delegate?.didValidateCvcWithError(error)
         }
-        if !isValid && error {
+        if !isValid && error != nil {
             error.memory = self.error
         }
         return isValid

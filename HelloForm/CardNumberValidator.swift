@@ -43,7 +43,7 @@ class CardNumberValidator: Validator {
             number = normalize(number)
             isValid = isLengthValid(number) && isLuhnValid(number)
         }
-        if !isValid && error {
+        if !isValid && error != nil {
             error.memory = self.error
         }
         return isValid

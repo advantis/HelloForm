@@ -13,7 +13,7 @@ class ExpiryValidator: Validator {
         if let date = input as? NSDate {
             isValid = (NSComparisonResult.OrderedAscending == NSDate.date().compare(date))
         }
-        if !isValid && error {
+        if !isValid && error != nil {
             error.memory = self.error
         }
         return isValid

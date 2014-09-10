@@ -17,7 +17,7 @@ class CardCvcValidator: Validator {
             let isAmex = number.hasPrefix("34") || number.hasPrefix("37")
             isValid = (isAmex && length == 4) || (!isAmex && length == 3)
         }
-        if !isValid && error {
+        if !isValid && error != nil {
             error.memory = self.error
         }
         return isValid
