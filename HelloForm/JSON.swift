@@ -13,7 +13,7 @@ enum JSON {
     case JNull
 
     init(data: NSData) {
-        self = JSON(NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: nil))
+        self = JSON(NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: nil)!)
     }
 
     init(_ value: AnyObject) {
@@ -80,7 +80,7 @@ enum JSON {
     }
 }
 
-extension JSON: Sequence {
+extension JSON: SequenceType {
     func generate() -> IndexingGenerator<[JSON]> {
         switch self {
             case .JSeq(let array):
