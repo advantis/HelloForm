@@ -22,12 +22,12 @@ struct Box<T> {
     }
 }
 
-enum Result<T>: LogicValue {
+enum Result<T>: BooleanType {
 
     case Success(Box<T>)
     case Failure(NSError)
 
-    func getLogicValue() -> Bool {
+    var boolValue: Bool {
         switch self {
             case .Success:
                 return true
