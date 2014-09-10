@@ -15,28 +15,28 @@ class PaymentFormViewController: UITableViewController {
     lazy var expiryFormatter = NSDateFormatter(format: "MM/yyyy")
 
     @IBOutlet
-    var eventName: UILabel
+    var eventName: UILabel!
 
     @IBOutlet
-    var emailField: TextField
+    var emailField: TextField!
 
     @IBOutlet
-    var numberField: TextField
+    var numberField: TextField!
 
     @IBOutlet
-    var expiryField: TextField
+    var expiryField: TextField!
 
     @IBOutlet
-    var cvcField: TextField
+    var cvcField: TextField!
 
     @IBOutlet
-    var quantityLabel: UILabel
+    var quantityLabel: UILabel!
 
     @IBOutlet
-    var quantityStepper: UIStepper
+    var quantityStepper: UIStepper!
 
     @IBOutlet
-    var submitButton: UIButton
+    var submitButton: UIButton!
 
 
     override func viewDidLoad() {
