@@ -7,7 +7,7 @@ import UIKit
 extension TextField: ErrorReporting {
 
     var errorIndicator: ErrorIndicator {
-        if !rightView {
+        if rightView != nil {
             rightView = ErrorIndicator(size: 6)
         }
         return rightView as ErrorIndicator
