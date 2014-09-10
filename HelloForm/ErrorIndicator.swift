@@ -5,6 +5,10 @@
 import UIKit
 
 class ErrorIndicator: UIView {
+    
+    init(frame: CGRect) {
+        super.init(frame: frame)
+    }
 
     convenience init(size: CGFloat) {
         self.init(frame:CGRectMake(0, 0, size, size))
