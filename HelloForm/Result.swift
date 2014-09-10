@@ -17,7 +17,7 @@ struct Box<T> {
         get { return closure() }
     }
 
-    func __conversion() -> T {
+    func getValue() -> T {
         return value
     }
 }
