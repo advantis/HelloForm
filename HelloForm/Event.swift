@@ -14,10 +14,10 @@ class Event {
     let quantity: Int
 
     init(attributes: JSON, context: EventContext) {
-        id = attributes["id"]!
-        name = attributes["name"]!
-        price = attributes["price"]!
-        quantity = attributes["quantity"]!
-        date = context.dateFormatter.dateFromString(attributes["date"]!)
+        id = attributes["id"].intValue()!
+        name = attributes["name"].stringValue()!
+        price = attributes["price"].doubleValue()!
+        quantity = attributes["quantity"].intValue()!
+        date = context.dateFormatter.dateFromString(attributes["date"].stringValue()!)!
     }
 }
